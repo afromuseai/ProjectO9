@@ -1,0 +1,114 @@
+git-lfs/3.6.1 (3.6.1; linux amd64; go 1.24.6)
+git version 2.50.1
+
+$ git-lfs filter-process
+Error downloading object: 846dc8347867d43b504c4e788ebc7480 (0df9827): Smudge error: Error downloading 846dc8347867d43b504c4e788ebc7480 (0df98277f393eabd5d855b21401c78cefd1ba5ae362ad0c8d1ab423d0906cac5): batch response: This repository exceeded its LFS budget. The account responsible for the budget should increase it to restore access.
+
+This repository exceeded its LFS budget. The account responsible for the budget should increase it to restore access.
+batch response
+github.com/git-lfs/git-lfs/v3/errors.newWrappedError
+	github.com/git-lfs/git-lfs/v3/errors/types.go:229
+github.com/git-lfs/git-lfs/v3/errors.Wrap
+	github.com/git-lfs/git-lfs/v3/errors/errors.go:74
+github.com/git-lfs/git-lfs/v3/tq.(*tqClient).Batch
+	github.com/git-lfs/git-lfs/v3/tq/api.go:97
+github.com/git-lfs/git-lfs/v3/tq.Batch
+	github.com/git-lfs/git-lfs/v3/tq/api.go:45
+github.com/git-lfs/git-lfs/v3/tq.(*TransferQueue).enqueueAndCollectRetriesFor
+	github.com/git-lfs/git-lfs/v3/tq/transfer_queue.go:581
+github.com/git-lfs/git-lfs/v3/tq.(*TransferQueue).collectBatches.func1
+	github.com/git-lfs/git-lfs/v3/tq/transfer_queue.go:470
+runtime.goexit
+	runtime/asm_amd64.s:1700
+Error downloading 846dc8347867d43b504c4e788ebc7480 (0df98277f393eabd5d855b21401c78cefd1ba5ae362ad0c8d1ab423d0906cac5)
+github.com/git-lfs/git-lfs/v3/errors.newWrappedError
+	github.com/git-lfs/git-lfs/v3/errors/types.go:229
+github.com/git-lfs/git-lfs/v3/errors.Wrapf
+	github.com/git-lfs/git-lfs/v3/errors/errors.go:85
+github.com/git-lfs/git-lfs/v3/lfs.(*GitFilter).downloadFile
+	github.com/git-lfs/git-lfs/v3/lfs/gitfilter_smudge.go:135
+github.com/git-lfs/git-lfs/v3/lfs.(*GitFilter).Smudge
+	github.com/git-lfs/git-lfs/v3/lfs/gitfilter_smudge.go:85
+github.com/git-lfs/git-lfs/v3/commands.smudge
+	github.com/git-lfs/git-lfs/v3/commands/command_smudge.go:128
+github.com/git-lfs/git-lfs/v3/commands.filterCommand
+	github.com/git-lfs/git-lfs/v3/commands/command_filter_process.go:132
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.7.0/command.go:944
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.7.0/command.go:1068
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.7.0/command.go:992
+github.com/git-lfs/git-lfs/v3/commands.Run
+	github.com/git-lfs/git-lfs/v3/commands/run.go:154
+main.main
+	github.com/git-lfs/git-lfs/v3/git-lfs.go:34
+runtime.main
+	runtime/proc.go:283
+runtime.goexit
+	runtime/asm_amd64.s:1700
+Smudge error
+github.com/git-lfs/git-lfs/v3/errors.newWrappedError
+	github.com/git-lfs/git-lfs/v3/errors/types.go:229
+github.com/git-lfs/git-lfs/v3/errors.NewSmudgeError
+	github.com/git-lfs/git-lfs/v3/errors/types.go:315
+github.com/git-lfs/git-lfs/v3/lfs.(*GitFilter).Smudge
+	github.com/git-lfs/git-lfs/v3/lfs/gitfilter_smudge.go:102
+github.com/git-lfs/git-lfs/v3/commands.smudge
+	github.com/git-lfs/git-lfs/v3/commands/command_smudge.go:128
+github.com/git-lfs/git-lfs/v3/commands.filterCommand
+	github.com/git-lfs/git-lfs/v3/commands/command_filter_process.go:132
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.7.0/command.go:944
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.7.0/command.go:1068
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.7.0/command.go:992
+github.com/git-lfs/git-lfs/v3/commands.Run
+	github.com/git-lfs/git-lfs/v3/commands/run.go:154
+main.main
+	github.com/git-lfs/git-lfs/v3/git-lfs.go:34
+runtime.main
+	runtime/proc.go:283
+runtime.goexit
+	runtime/asm_amd64.s:1700
+
+Current time in UTC:
+2026-04-13 19:33:30
+
+Environment:
+LocalWorkingDir=/home/runner/workspace
+LocalGitDir=/home/runner/workspace/.git
+LocalGitStorageDir=/home/runner/workspace/.git
+LocalMediaDir=/home/runner/workspace/.git/lfs/objects
+LocalReferenceDirs=
+TempDir=/home/runner/workspace/.git/lfs/tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneVerifyUnreachableAlways=false
+PruneRemoteName=origin
+LfsStorageDir=/home/runner/workspace/.git/lfs
+AccessDownload=none
+AccessUpload=none
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_COMMITTER_NAME=obed2g5
+GIT_EXEC_PATH=/nix/store/v2rxk9xkcxsas64wl7ds31al15cm2wqd-git-2.50.1/libexec/git-core
+GIT_ASKPASS=replit-git-askpass
+GIT_AUTHOR_EMAIL=57657026-obed2g5@users.noreply.replit.com
+GIT_PREFIX=
+GIT_COMMITTER_EMAIL=57657026-obed2g5@users.noreply.replit.com
+GIT_PAGER=
+GIT_EDITOR=
+GIT_AUTHOR_NAME=obed2g5
+
+Client IP addresses:
+172.31.74.66
